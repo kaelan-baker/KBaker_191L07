@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./styles/forms.css">
+</head>
+<body>
+    <main>
+        <h1>Give Us Your Feedback</h1>
+        <form method="get" name="fback">
+            <p>
+                <label for="lname" class="textlabel">Last Name : </label>
+                <input type="text" id="lname" name="lname" size="30" maxlength="30" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="fname" class="textlabel">First Name : </label>
+                <input type="text" id="fname" name="fname" size="25" maxlength="25" placeholder="First Name">
+            </p>
+            <p>
+                <label for="email" class="textlabel">Email : </label>
+                <input type="text" name="email" id="email" size="50" maxlength="60" placeholder="Email">
+            </p>
+            <p>
+                <label for="pnum" class="textlabel">Phone Number : </label>
+                <input type="text" name="pnum" id="pnum" size="20" maxlength="20" placeholder="Phone Number">
+            </p>
+            <fieldset>
+                <legend>How would you like to receive feedback (check all that apply)?</legend>
+                <input type="checkbox" name="chk_email" id="chk_email">
+                <label for="chk_email" class="checklabel">Email</label><br>
+                <input type="checkbox" name="chk_phone" id="chk_phone">
+                <label for="chk_phone" class="checklabel">Phone</label><br>
+                <input type="checkbox" name="chk_fbook" id="chk_fbook">
+                <label for="chk_fbook" class="checklabel">Facebook</label>
+            </fieldset>
+            <p>
+                <label for="cmt" class="textlabel">Comments : </label>
+                <textarea name="cmt" id="cmt" cols="50" rows="6"></textarea>
+            </p>
+            <p>
+                <label for="rating" class="textlabel">Our Rating : </label>
+                <select name="rating" id="rating">
+                    <option value="0">i. --Select One - </option>
+                    <option value="1">ii. Excellent </option>
+                    <option value="2">iii. Good </option>
+                    <option value="3">iv. Fair </option>
+                    <option value="4">v. Poor </option>
+                    <option value="5">vi. Bad </option>
+                </select>
+            </p>
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <input type="radio" name="rg1" id="r1" value="1">
+                    <label for="r1" class="checklabel">Search Engine</label><br>
+                    <input type="radio" name="rg1" id="r2" value="2">
+                    <label for="r2" class="checklabel">Friends</label><br>
+                    <input type="radio" name="rg1" id="r3" value="3">
+                    <label for="r3" class="checklabel">Advertisement</label><br>
+                </fieldset>
+                <input type="submit" class="buttoncss" value="Tell Us" id="btnSub">
+        </form>
+    </main>
+</body>
+</html>

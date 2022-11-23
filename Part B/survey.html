@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Servey</title>
+    <link rel="stylesheet" href="./styles/forform.css">
+</head>
+<body>
+    <h1>Music Servey</h1>
+    <form method="get" name="fServ">
+        <p>
+            <label for="sName">Name : </label>
+            <input type="text" name="sName" id="sName">
+        </p>
+        <p>
+            <label for="sEmail">Email : </label>
+            <input type="text" name="sEmail" id="sEmail">
+        </p>
+        <fieldset>
+            <legend>Select Your Favorite Types of Music</legend>
+            <input type="checkbox" name="chk_pop" id="chk_pop">
+            <label for="chk_pop" class="chk_pop">Pop</label><br>
+            <input type="checkbox" name="chk_country" id="chk_country">
+            <label for="chk_country" class="chk_country">Country</label><br>
+            <input type="checkbox" name="chk_classical" id="chk_classical">
+            <label for="chk_classical" class="chk_classical">Classical</label><br>
+            <input type="checkbox" name="chk_reggae" id="chk_reggae">
+            <label for="chk_reggae" class="chk_reggae">Reggae</label><br>
+            <input type="checkbox" name="chk_broadway" id="chk_broadway">
+            <label for="chk_broadway" class="chk_broadway">Broadway</label><br>
+            <input type="checkbox" name="chk_rap" id="chk_rap">
+            <label for="chk_rap" class="chk_rap">Rap</label><br>
+            <input type="checkbox" name="chk_crock" id="chk_crock">
+            <label for="chk_crock" class="chk_crock">Classic Rock</label><br>
+            <input type="checkbox" name="chk_folk" id="chk_folk">
+            <label for="chk_folk" class="chk_folk">Folk</label><br>
+            <input type="checkbox" name="chk_other" id="chk_other">
+            <label for="chk_other" class="chk_other">Other</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>How often do you download music?</legend>
+            <input type="radio" name="rg1" id="r1" value="1">
+            <label for="r1" class="checklabel">Daily</label><br>
+            <input type="radio" name="rg1" id="r2" value="2">
+            <label for="r2" class="checklabel">Several Times a Week</label><br>
+            <input type="radio" name="rg1" id="r3" value="3">
+            <label for="r3" class="checklabel">Once a Week</label><br>
+            <input type="radio" name="rg1" id="r4" value="4">
+            <label for="r4" class="checklabel">Once a Month</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>How often do you listen to music?</legend>
+            <select name="listen" id="listen" size="3" multiple>
+                <option value="0">All the time</option>
+                <option value="1">When I'm driving</option>
+                <option value="2">When I first wake up</option>
+                <option value="3">When I'm in the shower</option>
+                <option value="4">When I do school</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>How Important is music in your life?</legend>
+            <textarea name="sComment" id="sComment" cols="90" rows="4"></textarea>
+        </fieldset>
+        <input type="submit" value="Send Servey" id="servBtn">
+
+    </form>
+</body>
+</html>

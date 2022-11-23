@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+h1{
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+form{
+    margin-left: 5vw;
+}
+form fieldset, form #servBtn{
+    margin-left: 5vw;
+}
+form fieldset{
+    margin: 1em;
+    padding: .2em;
+    border-color: aquamarine;
+    box-shadow: 1px 1px 1px 1px darkcyan;
+}
+form fieldset input{
+    margin: .25em;
+}
